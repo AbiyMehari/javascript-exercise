@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <h1 id="obj"></h1>
+    <script>
+      const car = { type: "Fiat", color: "silver", model: 500, mfy: 2022 };
+      let output = "";
+      for (let key in car) {
+        output += `${key}: ${car[key]} <br>`;
+      }
+      document.getElementById("obj").innerHTML = output;
+    </script>
+  </body>
+</html>
