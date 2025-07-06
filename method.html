@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method in object</title>
+  </head>
+  <body>
+    <h1 id="name"></h1>
+    <script>
+      const person = {
+        fname: "Abiy",
+        lname: "Mehari",
+        age: 35,
+        fullName: function () {
+          return `My name is ${this.fname} ${this.lname} and  I am ${this.age} years old.`;
+        },
+      };
+      document.getElementById("name").innerHTML = person.fullName();
+    </script>
+  </body>
+</html>
